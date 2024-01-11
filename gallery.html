@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <!-- GOOGLE FONT (Monserrat)-->
+
+    <!---boxicons link--->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+     <!---remixicons link--->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+  
+    <!-- FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- SWIPERJS CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!--CUSTOM STYLESHEET-->
+    <link rel="stylesheet" href="./gallery.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html" class="nav_logo"><img src="./img/logo.png" alt="Nav Logo"></a>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="table.html">Schedule</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="poetry.html">Poetry</a></li>
+                <li><a href="playlist.html">Song Playlist</a></li>
+                <li><a href="trailer.html">Movies</a></li>
+            </ul>
+            <ul class="nav_socials">
+                <li><a href="https://instagram.com/salinasuzuki_" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.tiktok.com/@nixx_ss?_t=8infpMj2Mxb&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+            </ul>
+            
+            <button class="nav_toggle-btn" id="nav_toggle-open"><i class="fa-solid fa-bars"></i></button>
+            <button class="nav_toggle-btn" id="nav_toggle-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+    <!------------------------------END OF NAV------------------------->
+
+    <section id="gallery">
+        <div class="container gallery_container swiper mySwiper">
+            <div class="gallery_head">
+                <h2 class="gallery_title">Shadowscapes: A Gallery of Hidden Narratives</h2>
+                <div class="empty gallery_empty"></div>
+            </div>
+            <p>
+                In the realm of photography, I specialize in crafting emotive narratives through the art of darkness and low light. Guided by shadows, my lens captures the subtle dance of contrasts, revealing a world where emotions find their voice. Each frame is a poetic exploration, echoing the profound beauty that emerges when light and shadow intertwine, inviting viewers into a captivating visual experience. It's not merely about what is seen but about the untold stories that linger within the shadows, waiting to be discovered by those who venture into the captivating world I frame.
+            </p>
+            <div class="swiper-wrapper">
+                <article class="swiper-slide">
+                    <img src="./img/men.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/light.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/jump.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/me.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/down.jpeg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/phone.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/sea.jpeg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/spider.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/saki.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/love.jpg">
+                </article>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <footer>
+                <p>Copyright &copy;2023; Designed by <span class="designer">Nina Salina Suzuki</span></p>
+            </div>
+        </footer>
+    </section>
+
+     <!-- SWIPER JS CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Audio Player with Playlist Example </title>
+    <!-- GOOGLE FONT (Monserrat)-->
+
+    <!---boxicons link--->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+     <!---remixicons link--->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+  
+    <!-- FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- SWIPERJS CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/playlist.css">
+    <link rel="stylesheet" href="css/style.css">
+  
+  </head>
+  <body>
+    <nav>
+      <div class="container nav_container">
+          <a href="index.html" class="nav_logo"><img src="./img/logo.png" alt="Nav Logo"></a>
+          <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="table.html">Schedule</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="poetry.html">Poetry</a></li>
+            <li><a href="playlist.html">Song Playlist</a></li>
+            <li><a href="trailer.html">Movies</a></li>
+          </ul>
+          <ul class="nav_socials">
+              <li><a href="https://instagram.com/salinasuzuki_" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.tiktok.com/@nixx_ss?_t=8infpMj2Mxb&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+          </ul>
+          
+          <button class="nav_toggle-btn" id="nav_toggle-open"><i class="fa-solid fa-bars"></i></button>
+          <button class="nav_toggle-btn" id="nav_toggle-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+  </nav>
+  <!------------------------------END OF NAV------------------------->
+
+
+ <header class="intro">
+ <h1>Songs Playlist </h1>
+ <p> 
+  "Welcome to the ultimate musical journey!<br>Dive into the rhythm and soul of my favorite songs playlist – where every note is a story and every beat is a memory.<br>Enjoy the harmonious blend that makes this collection truly special!"</p>
+      
+ <main>
+ <div class="simple-audio-player" id="simp" data-config='{"shide_top":false,"shide_btm":false,"auto_load":false}'>
+  <div class="simp-playlist">
+    <ul>
+      <li>
+        <span class="simp-source" data-src="./song/scars.mp3" data-cover="./img/scars.jpg">Beautiful Scars</span>
+        <span class="simp-desc">Maximillian</span>
+      </li>
+      <li>
+        <span class="simp-source" data-src="./song/Tattoo.mp3" data-cover="./img/tattoo.jpg">Tattoo</span>
+        <span class="simp-desc">Loreen</span>
+      </li>
+      <li>
+        <span class="simp-source" data-src="./song/duka.mp3" data-cover="./img/duka.jpg">Duka</span>
+        <span class="simp-desc">Last Child</span>
+      </li>
+      <li class="simp-source">
+        <span class="simp-source" data-src="./song/comethru.mp3" data-cover="./img/comethru.jpg">Comethru</span>
+        <span class="simp-desc">Jeremy Zucker</span>
+      </li>
+      <li><span class="simp-source" data-src="./song/penjaga.mp3" data-cover="./img/perfect.jpg">Penjaga Hati</span>
+        <span class="simp-desc">Nadhif Basalamah</span>
+      </li>
+      <li>
+        <span class="simp-source" data-src="./song/eyes.mp3" data-cover="./img/eyes.jpg">Those Eyes</span>
+        <span class="simp-desc">New West</span>
+      </li>
+      <li>
+        <span class="simp-source" data-src="./song/awake.mp3" data-cover="./img/awake.jpg">Wide Awake</span>
+        <span class="simp-desc">Katy Perry</span>
+      </li>
+      <li>
+        <span class="simp-source" data-src="./song/forgot.mp3" data-cover="./img/forgot.png">Forgot About Us</span>
+        <span class="simp-desc">Keenan Te</span>
+      </li>
+  </div>
+ </main>
+
+ <footer>
+  <br>
+  <br>
+      <p>Copyright &copy;2023; Designed by <span class="designer">Nina Salina Suzuki</span></p>
+  </div>
+</footer>
+  
+<!-- Audio Player JS -->
+<script  src="./js/playlist.js"></script>
+<script src="./js/main.js"></script>
+      
+  </body>
+</html>

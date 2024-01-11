@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONT (Monserrat)-->
+
+    <!---boxicons link--->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+     <!---remixicons link--->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+  
+    <!-- FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- SWIPERJS CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Fresh Tomatoes!</title>
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!--CUSTOM STYLESHEET-->
+    <link rel="stylesheet" href="./trailer.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<header class="intro">
+  <h1>Favourite Movies </h1>
+    <body>
+        <nav>
+            <div class="container nav_container">
+                <a href="index.html" class="nav_logo"><img src="./img/logo.png" alt="Nav Logo"></a>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="table.html">Schedule</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="poetry.html">Poetry</a></li>
+                    <li><a href="playlist.html">Song Playlist</a></li>
+                    <li><a href="trailer.html">Movies</a></li>
+                </ul>
+                <ul class="nav_socials">
+                    <li><a href="https://instagram.com/salinasuzuki_" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@nixx_ss?_t=8infpMj2Mxb&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+                
+                <button class="nav_toggle-btn" id="nav_toggle-open"><i class="fa-solid fa-bars"></i></button>
+                <button class="nav_toggle-btn" id="nav_toggle-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </nav>
+      <!-- Trailer Video Modal -->
+      <div class="modal " id="trailer">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+              <img src='data:image/x-png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAACXBIWXMAAAsTAAALEwEAmpwYAAABgElEQVQ4y72TPS9DYRiGr/dg5E+0/Q8MRBgkJho1iY+FjaHMIh2QMJgQCX/AgoVExEmbaGKxSHxUWqOxWqU4vQ3nnPZoNSae6bwn9/Xc7/PkfuHfSyHFZSuvvGzFFfpNbMtRsBzZTSEN14lrUPRnue61U8e8aFmPkhoQheRca0wxreuzKn/WgmKaUEaSwq7S8ohdrEvKQJpNKgCUWCEHlMgB7LlC4/bnDkvscQxAJ3OUSJADDDP0udqIyUArAENYYJjknTMgTRtPbl+mfDkMseY72PR4s1Rd+N4dIGW6fSBPh/+3whbn3vckg8HNFE17behqeSMCcIPTsH4XuPKPr6wGgDTb3sZqKhc49DxZ5Na7+wAA52zUXA7q1lokQRYwTNOP2OUEgC5maamu1QIwD6RgnywA4/QDhil6AbhwwZTJBKMRlvOmJY3qNJCkinYU06o+JClSn6aoVFKyIahHKkvSyE95japZjTR7EeEGCynp57Q5NK+kCiooqflfxH9SX7sUOLwGLpqpAAAAAElFTkSuQmCC' alt='Close' />
+            </a>
+            <div class="scale-media" id="trailer-video-container">
+            </div>
+          </div>
+        </div>
+      </div>
+            
+  <div class="col-md-3 col-sm-4 col-xs-6 col-centered movie-tile">
+      <div class="thumbnail">
+          <img class="img-responsive movie-img" src="./img/exit.jpg" alt="Exit" data-trailer-youtube-id="Sp_Uex375YM" data-toggle="modal" data-target="#trailer">
+          <button class="btn btn-sm btn-block movie-btn" data-toggle="popover" data-placement="top auto" title="Exit" data-content="<p>
+            In this South Korean disaster action-comedy, two characters, Yong-nam and Eui-joo, find themselves in a perilous situation when a toxic gas engulfs the city. The film combines elements of action and humor as they strive to survive amidst numerous challenges.</p>">Exit</button>
+      </div>
+  </div>
+
+  <div class="col-md-3 col-sm-4 col-xs-6 col-centered movie-tile">
+    <div class="thumbnail">
+        <img class="img-responsive movie-img" img src="./img/sing.jpg" alt="Sing" data-trailer-youtube-id="9qPgK_u4vX8" data-toggle="modal" data-target="#trailer">
+        <button class="btn btn-sm btn-block movie-btn" data-toggle="popover" data-placement="top auto" title="Sing" data-content="<p>
+          An animated film revolves around a koala named Buster Moon, who organizes a singing competition to revive his struggling theater. Diverse animal contestants join, pursuing their dreams amid challenges and the quest for stardom.<p>">Sing</button>
+    </div>
+</div>
+  
+  <div class="col-md-3 col-sm-4 col-xs-6 col-centered movie-tile">
+      <div class="thumbnail">
+          <img class="img-responsive movie-img" img src="./img/whisker.jpg" alt="A Whisker Away" data-trailer-youtube-id="aXc9DVfLTGo" data-toggle="modal" data-target="#trailer">
+          <button class="btn btn-sm btn-block movie-btn" data-toggle="popover" data-placement="top auto" title="A Whisker Away" data-content="<p>
+            The movie involves a girl with the ability to transform into a cat, using this ability to get closer to her crush. However, the magical transformation leads to unforeseen consequences, delving into the complexities of teenage emotions.</p>">A Whisker Away</button>
+      </div>
+  </div>
+  
+  <div class="col-md-3 col-sm-4 col-xs-6 col-centered movie-tile">
+      <div class="thumbnail">
+          <img class="img-responsive movie-img" img src="./img/pixel.jpg" alt="Pixel" data-trailer-youtube-id="XAHprLW48no" data-toggle="modal" data-target="#trailer">
+          <button class="btn btn-sm btn-block movie-btn" data-toggle="popover" data-placement="top auto" title="Pixel" data-content="<p>In this sci-fi action-comedy, Earth is under attack by classic video game characters. Led by arcade gamers, including Adam Sandler, a group must save the world by battling these pixelated invaders.</p>">Pixel</button>
+      </div>
+  </div>
+  
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="./trailer.js"></script>
+    <script src="./main.js"></script>
+    </body>
+  </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vid.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MEMORY LANE</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="media/hurt.png" width="100%">
+                    <img src="media/play.png" class="play-btn" onclick="playVideo('media/hurt.mp4')">
+            </div>
+        </div>
+        <div class="col">
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="media/lookism1.png">
+                    <img src="media/play.png" class="play-btn" onclick="playVideo('media/lookism.mp4')">
+                </div>
+                <p>How to add multiple videos in a websote or<br>to make a video gallert</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="media/hopeless1.png">
+                    <img src="media/play.png" class="play-btn" onclick="playVideo('media/hopeless.mp4')">
+                </div>
+                <p>How to add multiple videos in a websote or<br>to make a video gallert</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="media/dojo1.png">
+                    <img src="media/play.png" class="play-btn" onclick="playVideo('media/dojo.mp4')">
+                </div>
+                <p>How to add multiple videos in a websote or<br>to make a video gallert</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-player" id="video-player">
+        <video width="100%" controls autoplay id="myvideo">
+            <source src="media/hurt.mp4" type="video/mp4">
+        </video>
+        <img src="media/close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+
+
+    <script>
+        var videoplayer = document.getElementById("videoplayer");
+        var myvideo = document.getElementById("myvideo");
+
+        function stopbtn(){
+            videoPlayer.style.display = "none";
+        }
+
+        function playVideo(file){
+            console.log("Playing video...");
+            myvideo.src = file;
+            videoplayer.style.display = "block";
+         }
+    </script>
+
+</body>
+</html>
